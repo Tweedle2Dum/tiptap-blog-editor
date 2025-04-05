@@ -101,15 +101,20 @@ A rich blog editing interface built with Tiptap, supporting editing, preview mod
 
 ---
 
-## 📁 File Structure Overview
+## 🗂 File Structure – `features/editor`
+
 ```
-/components
-  ├── blog-editor.tsx         // Main editor component
-  ├── hooks/
-  │   └── use-editor-setup.ts // Custom hook for initializing the editor
-  ├── table-of-content.tsx    // TOC generation from editor content
-  └── topbar.tsx              // Toggle + actions (e.g., preview toggle)
+features/
+└── editor/
+    ├── extensions/          # Custom Tiptap extensions
+    ├── hooks/               # Editor-related hooks
+    ├── table-of-content/    # TOC generation components
+    ├── topbar/              # Editor topbar UI
+    ├── ui/                  # Editor-specific UI components
+    ├── index.tsx            # Editor entry point component
+    └── utils.ts             # Editor utility functions
 ```
+
 
 ---
 
